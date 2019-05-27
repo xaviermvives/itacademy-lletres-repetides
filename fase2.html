@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicis JavaScript</title>
+</head>
+<body>
+    <script>
+       
+
+
+        /*FASE 2 */
+        //Trobar vocals i consonants  
+        var name = "Hermen5gildOO".toUpperCase();
+        var nameLletres = name.split('');  //torna un array
+        console.log(nameLletres);  
+
+        
+       
+        /* Amb un for i una sèrie de if, else if 
+        for (var i = 0; i < nameLletres.length; i++){
+            if(!isNaN(nameLletres[i])){
+                console.log("Els noms de persones no contenen el número " + nameLletres[i]);
+            }else if(nameLletres[i]== "A"){
+                console.log("He trobat la vocal A");
+            }else if (nameLletres[i]== "E"){
+                console.log("He trobat la vocal E");
+            }else if (nameLletres[i]== "I"){
+                console.log("He trobat la vocal I");
+            }else if (nameLletres[i]== "O"){
+                console.log("He trobat la vocal O");
+            }else if (nameLletres[i]== "U"){
+                console.log("He trobat la vocal U");
+            }else {
+                console.log("He trobat la consonant " + nameLletres[i]);
+            }
+        }  */
+        
+
+        /* Amb un for, un if else i un switch anidat */
+        for (var i = 0; i < nameLletres.length; i++){
+            var lletra = nameLletres[i];
+            if(!isNaN(lletra)){
+                console.log("Els noms de persones no contenen el número " + lletra);
+            }else {
+            switch (lletra) {
+                case "A":
+                console.log("He trobat la vocal A");
+                break;
+                case "E":
+                console.log("He trobat la vocal E");
+                break;
+                case "I":
+                console.log("He trobat la vocal I");
+                break;
+                case "O":
+                console.log("He trobat la vocal O");
+                break;
+                case "U":
+                console.log("He trobat la vocal U");
+                break;
+                default:
+                    console.log("He trobat la consonant " + lletra);
+
+                }
+            }
+        }  
+           
+        
+
+    </script>
+</body>
+</html>

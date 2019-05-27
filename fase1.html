@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicis JavaScript</title>
+</head>
+<body>
+    <script>
+      
+
+
+
+        /*  LLETRES REPETIDES */
+        
+
+        /* FASE 1: Crea un llistat amb el teu nom on cada posició correspongui a una lletra.
+        Fes un bucle que recorri aquesta taula i mostri per consola cadascuna de les lletres.*/
+
+        /*A partir d'un string 
+        var name="Xavier";
+        var nameUppercase = name.toUpperCase();
+        for(var i = 0; i <= nameUppercase.length; i++){
+            console.log(nameUppercase.slice(i, i+1));
+        }  */ 
+       
+
+
+        // Amb una array 
+        var llistat = ["X", "A", "V", "I", "E", "R"];
+
+        /* Amb un for */
+        for (var i= 0; i <= llistat.length; i++) {
+            console.log(llistat[i]);
+        } 
+        
+       /* Amb un forEach 
+        llistat.forEach(function (i) {
+            console.log(i);
+        });
+        */
+
+        /* Amb for...of 
+        var llistat = ["X", "A", "V", "I", "E", "R"];
+        var str = "Alejandro";
+        for(let letter of llistat) {
+            console.log(letter);
+        }
+        for(let letter of str) {
+            console.log(letter);
+        }
+        */
+
+
+
+    </script>
+</body>
+</html>

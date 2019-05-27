@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicis JavaScript</title>
+</head>
+<body>
+    <script>
+        /* FASE 4 
+        Crea una altra llista amb el teu cognom on cada posició correspongui a una lletra.
+
+        Fusiona les dues llistes en una sola. A més, afegeix una posició amb un espai buit entre la primera i la segona. És a dir, partim de la llista name i surname i al acabar l’execució només tindrem una que es dirà fullName.
+        */
+        
+        var firstName = "Alejandro".toUpperCase().split('');
+        var lastName = "Kale".toLocaleUpperCase().split('');
+        console.log(firstName);
+        firstName.push(" ");
+        var fullName = firstName.concat(lastName);
+        console.log(fullName);
+
+        for (var i = 0; i < fullName.length; i++){
+            console.log(i + ":" + fullName[i]);
+        }
+        
+    </script>
+</body>
+</html>

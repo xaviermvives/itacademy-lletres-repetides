@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicis JavaScript</title>
+</head>
+<body>
+    <script>
+       /* Emmagatzemar en un Map tant les lletres de la llista com el nombre de vegades que hi apareixen
+ */
+      function countCharacters (){
+        var name = ["A", "L", "L", "E", "J", "A", "N", "D", "R", "O", "O"];
+        var contador = 1;
+        var map = new Map();
+
+        for (let i = 0; i < name.length; i++){
+            if (map.has(name[i])) {
+                map.set(name[i],contador+1);
+            }else {
+                map.set(name[i], contador);
+            }
+        }
+
+        console.log(map);
+      }
+
+
+      countCharacters();
+      
+    </script>
+</body>
+</html>
